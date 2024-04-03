@@ -3,18 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desciption" content="Pagina web de pracicas con JavaScript y JQuery / UI con sus principales elementos">  
+    
+    <link rel="shortcut icon" href="IMAGEN JQUERY AQUI">
+    <!-- FUENTE GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
     <title>Web JQuery</title>
-    <!--  -->
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/ae04ce9412.js" crossorigin="anonymous"></script>
 
     <!-- Cargado de JQuery y sus componentes-->
 
     <!-- Ruta de CSS -->
-    <link rel="stylesheet" href="CSS/styles.css">
-    
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+
     <!-- Ruta de hoja de JavaScript -->
     <script src="JavaScript/main.js"></script>
 </head>
 <body>
+
+ <section id="global">
+     <!-- Cabecera de la WEB -->
+     <header>
+        <div id="logo">
+            <h1>Proyecto JS</h1>
+        </div>
+        <div class="ajuste"></div>
+        <nav id="menu-nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre mí</a></li>
+                <li><a href="#">Reloj</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+     </header>
+    <!-- Slider -->
+    <div id="slider">
+
+    </div>
+    <!-- Contenido -->
+    <section id="contenido">
+        <div id="posts">
+            <article class="post">
+                <h2>Título del artículo</h2>
+                <span class="fecha">Fecha de publicación</span>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <a href="#" class="button-mas">Leer mas<i class="fa-solid fa-arrow-down"></i></a>
+            </article>
+            <article class="post">
+                <h2>Título del artículo 2</h2>
+                <span class="fecha">Fecha de publicación</span>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <a href="#" class="button-mas">Leer mas<i class="fa-solid fa-arrow-down"></i></a>
+            </article>
+
+        </div>
+       
+       
+       
+        <aside id="sidebar">
+          <div id="about">
+            <h4><span><i class="fa-solid fa-grip-lines inicio"></i><i class="fa-solid fa-grip-lines inicio"></i><i class="fa-solid fa-grip-lines inicio"></i>¿Quién soy?<i class="fa-solid fa-grip-lines final"></i><i class="fa-solid fa-grip-lines final"></i><i class="fa-solid fa-grip-lines final"></i></span></h4>
+            <img src="img/user.png">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          </div>
+
+
+          <div id="login">
+            <h4><span>Identifícate</span></h4>
+            <form>
+                <label for="name">Nombre</label>
+                <input type="text" name="name">
+                <label for="email">Email</label>
+                <input type="text" name="email">
+                <label for="password">Contraseña</label>
+                <input type="password" name="password">
+                <input type="submit" value="Entrar" class="boton">
+            </form>
+          </div>
+        </aside>
+        
+        <div class="ajuste"></div>
+    </section>
+
+
+
+
+ </section>
+ <footer>
+    Web JavaScript en profundidad
+ </footer>
     
 </body>
 </html>

@@ -1,0 +1,265 @@
+/* Declaracion de variables base y gama de colores */
+:root {
+    --color-primario-cream: #f0f0c9ff;
+    --color-secundario-lilac: #c398b7ff;
+    --color-secundario2-green-blue: rgb(98, 142, 189);
+    --color-background-lavender-web: #c9daf8ff;
+    --color-texto-dark-purple: #3a183aff;
+    --text-default: "Libre Baskerville", serif;
+}
+
+/* Estilo de las Fuentes  */
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+
+    font-style: italic;
+
+}
+
+/* ESTILOS CSS */
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.ajuste {
+    float: none;
+    clear: both;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 110%;
+    height: 110%;
+    background-image: url(../img/fondo4.webp);
+    background-size: auto;
+    background-position: all;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: blur(2.5px);
+    z-index: -1;
+}
+
+#global {
+    width: 65%;
+    margin: 20px auto;
+    margin-top: 30px;
+    padding: 25px;
+    background-color: var(--color-primario-cream);
+    font-family: var(--text-default);
+    color: var(--color-texto-dark-purple);
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px var(--color-secundario2-green-blue);
+}
+
+/* CABECERA  */
+
+#logo {
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: var(--color-texto-dark-purple);
+    border-radius: 3px;
+    text-shadow: 0px 0px 4px rgb(255, 255, 255);
+
+    font-weight: 900;
+    text-align: left;
+    padding-left: 30px;
+    border: solid 1.7px var(--color-texto-dark-purple);
+    box-shadow: 1px 1px 8px rgba(87, 29, 103, 0.41);
+    width: 75%;
+    height: 80px;
+    background-image: url(../img/fondo4.webp);
+    background-size: cover;
+    margin-bottom: 15px;
+    line-height: 77px;
+    float: left;
+
+}
+
+#menu-nav {
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 40px;
+    background-color: rgba(58, 24, 58, 0.845);
+    border-radius: 4px;
+
+    margin: none;
+    box-shadow: 01px 0.6px 3px var(--color-secundario-lilac);
+
+}
+
+#menu-nav ul {
+    line-height: 40px;
+    list-style: none;
+
+}
+
+#menu-nav ul li {
+    height: 40px;
+    display: inline-block;
+    transition: all 300ms;
+
+
+}
+
+#menu-nav a {
+    display: block;
+    text-decoration: none;
+    color: var(--color-primario-cream);
+
+
+    padding-left: 25px;
+    padding-right: 20px;
+    transition: all 0.3s;
+
+}
+
+#menu-nav a:hover {
+
+    background-color: rgba(116, 161, 209, 0.89);
+    height: 102%;
+    box-shadow: 0px 0px 2px var(--color-secundario-lilac);
+    border-radius: 2px;
+
+
+}
+
+
+
+/* PARTE DE LOS POSTS */
+
+#posts {
+    width: 60%;
+    float: left;
+}
+
+.post {
+    padding: 7px;
+}
+
+.post h2 {
+    font-size: 30px;
+}
+
+.post .fecha {
+    display: block;
+    color: grey;
+    margin-top: 5px;
+    font-style: italic;
+    letter-spacing: 2px;
+    padding-left: 6px;
+    font-weight: 500;
+}
+
+.post i {
+    float: right;
+    color: rgba(58, 24, 58, 0.755);
+    margin-right: 5px;
+
+}
+
+.post p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 23px;
+    font-weight: 500;
+
+}
+
+.button-mas {
+    padding: 10px;
+    background-color: var(--color-background-lavender-web);
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+    width: 45%;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: var(--text-default);
+    font-weight: 600;
+    border-radius: 3px;
+    transition: all 0.4s;
+
+}
+
+.button-mas:hover {
+    background-color: var(--color-secundario-lilac);
+}
+
+
+/* SECCION ASIDE */
+#sidebar {
+    width: 31%;
+    float: right;
+   
+}
+
+#sidebar h4 {
+   
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+
+
+
+
+}
+
+#sidebar h4 .inicio {
+    margin: 0px -0.4px;
+    float: inline-start;
+    color: rgba(58, 24, 58, 0.534);
+
+
+}
+
+#sidebar h4 .final {
+    margin: 0px -0.4px;
+    float: inline-end;
+    color: rgba(58, 24, 58, 0.526);
+}
+#sidebar img{
+    width: 80%;
+    float: right;
+    
+    box-shadow: 0px 0px 10px var(--color-secundario2-green-blue);
+    border-radius: 100%;
+}
+#sidebar p{
+    font-size: 13px;
+    text-align: right;
+   float: inline-end;
+   letter-spacing: 1px;
+   
+   width: 90%;
+   margin-top: 15px;
+   margin-bottom: 20px;
+}
+
+/* Formulario de ingreso */
+form{
+   
+   float: inline-end;
+}
