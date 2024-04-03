@@ -32,11 +32,7 @@
 }
 
 /* ESTILOS CSS */
-* {
-    margin: 0px;
-    padding: 0px;
 
-}
 
 .ajuste {
     float: none;
@@ -53,8 +49,8 @@ body::after {
     width: 110%;
     height: 110%;
     background-image: url(../img/fondo4.webp);
-    background-size: auto;
-    background-position: all;
+    background-size: 100%;
+    background-position: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     filter: blur(2.5px);
@@ -76,12 +72,12 @@ body::after {
 /* CABECERA  */
 
 #logo {
+
     font-size: 32px;
     letter-spacing: 2px;
     color: var(--color-texto-dark-purple);
     border-radius: 3px;
     text-shadow: 0px 0px 4px rgb(255, 255, 255);
-
     font-weight: 900;
     text-align: left;
     padding-left: 30px;
@@ -92,7 +88,7 @@ body::after {
     background-image: url(../img/fondo4.webp);
     background-size: cover;
     margin-bottom: 15px;
-    line-height: 77px;
+    line-height: 0px;
     float: left;
 
 }
@@ -212,27 +208,34 @@ body::after {
 #sidebar {
     width: 31%;
     float: right;
-   
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-right: 20px;
 }
 
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+
+
 #sidebar h4 {
-   
+    float: right;
+    max-width: 80%;
     margin-top: 30px;
     margin-bottom: 20px;
     text-align: center;
     line-height: 10px;
-
-
-
-
 }
 
 #sidebar h4 .inicio {
     margin: 0px -0.4px;
     float: inline-start;
     color: rgba(58, 24, 58, 0.534);
-
-
 }
 
 #sidebar h4 .final {
@@ -240,26 +243,63 @@ body::after {
     float: inline-end;
     color: rgba(58, 24, 58, 0.526);
 }
-#sidebar img{
-    width: 80%;
-    float: right;
-    
-    box-shadow: 0px 0px 10px var(--color-secundario2-green-blue);
+
+#sidebar img {
+    width: 130px;
+
+    margin-right: 5px;
+    float: inline-end;
+    box-shadow: 0px 0px 0px var(--color-secundario2-green-blue);
     border-radius: 100%;
+
 }
-#sidebar p{
+
+#sidebar p {
     font-size: 13px;
     text-align: right;
-   float: inline-end;
-   letter-spacing: 1px;
-   
-   width: 90%;
-   margin-top: 15px;
-   margin-bottom: 20px;
+    float: inline-end;
+    letter-spacing: 1px;
+    max-width: 60%;
+    margin-top: 15px;
 }
 
 /* Formulario de ingreso */
-form{
-   
-   float: inline-end;
+#login {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+
+
+}
+
+#login form {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#login .boton {
+    margin-top: 7px;
+    padding: 4px 15px;
+    background-color: var(--color-background-lavender-web);
+    cursor: pointer;
+    color: var(--text-default);
+    font-weight: 600;
+    border-radius: 3px;
+    border: none;
+    transition: all 0.3s;
+}
+
+#login .boton:hover {
+
+    padding: 4px 25px;
+    background-color: var(--color-secundario-lilac);
+
+
+}
+
+#login .inpt {
+    border: none;
+
 }
