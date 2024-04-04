@@ -1,0 +1,112 @@
+:root {
+    --color-primario-cream: #f0f0c9ff;
+    --color-secundario-lilac: #c398b7ff;
+    --color-secundario2-green-blue: rgb(98, 142, 189);
+    --color-background-lavender-web: #c9daf8ff;
+    --color-texto-dark-purple: #3a183aff;
+    --text-default: "Libre Baskerville", serif;
+}
+
+body::after {
+
+    background-image: url(../img/fondo4.webp);
+
+}
+
+#global {
+    background-color: var(--color-primario-cream);
+    font-family: var(--text-default);
+    color: var(--color-texto-dark-purple);
+    box-shadow: 0px 0px 4px var(--color-secundario2-green-blue);
+}
+
+#logo {
+    color: var(--color-texto-dark-purple);
+    text-shadow: 0px 0px 4px rgb(255, 255, 255);
+    border: solid 1.7px var(--color-texto-dark-purple);
+    box-shadow: 1px 1px 8px rgba(87, 29, 103, 0.41);
+    background-image: url(../img/fondo4.webp);
+}
+
+#menu-nav {
+    background-color: rgba(58, 24, 58, 0.845);
+    box-shadow: 01px 0.6px 3px var(--color-secundario-lilac);
+}
+
+#menu-nav a {
+    color: var(--color-primario-cream);
+}
+
+#menu-nav a:hover {
+    background-color: rgba(116, 161, 209, 0.89);
+    box-shadow: 0px 0px 2px var(--color-secundario-lilac);
+}
+
+.post i {
+    color: rgba(58, 24, 58, 0.755);
+}
+
+.button-mas {
+
+    background-color: var(--color-background-lavender-web);
+
+    color: var(--text-default);
+}
+
+.button-mas:hover {
+    background-color: var(--color-secundario-lilac);
+}
+
+#sidebar h4 .inicio {
+    color: rgba(58, 24, 58, 0.534);
+}
+
+#sidebar h4 .final {
+    color: rgba(58, 24, 58, 0.526);
+}
+
+#sidebar img {
+
+    box-shadow: 0px 0px 0px var(--color-secundario2-green-blue);
+
+
+}
+
+#login .boton {
+
+    background-color: var(--color-background-lavender-web);
+
+    color: var(--text-default);
+}
+
+#login .boton:hover {
+
+   
+    background-color: var(--color-secundario-lilac);
+
+
+}
+
+#login .inpt {
+   
+    border: 1.7px solid var(--color-secundario2-green-blue);
+    
+}
+
+#login .inpt:focus {
+    
+    border: 1.7px solid var(--color-texto-dark-purple);  
+}
+
+footer {
+    font-family: var(--text-default);
+    color: var(--color-primario-cream);
+    background: rgba(58, 24, 58, 0.781);
+}
+.bx-wrapper{
+    border: 6px solid var(--color-background-lavender-web);
+   
+}
+.bx-wrapper:hover{
+    border: 6px solid var(--color-texto-dark-purple);
+}

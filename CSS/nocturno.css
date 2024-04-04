@@ -1,0 +1,116 @@
+:root {
+    --color-primario-cream: #322F20;
+    --color-secundario-lilac: #6A5837;
+    --color-secundario2-green-blue: #23231A;
+    --color-background-lavender-web:#D0CD94 ;
+    --color-texto-dark-purple: #d9dfc3;
+    --text-default: "Libre Baskerville", serif;
+}
+
+body::after {
+
+    background-image: url(../img/perfcta.webp);
+
+}
+
+#global {
+    background-color: var(--color-primario-cream);
+    font-family: var(--text-default);
+    color: var(--color-texto-dark-purple);
+    box-shadow: 0px 0px 4px var(--color-secundario2-green-blue);
+}
+
+#logo {
+    color: var(--color-background-lavender-web);
+    text-shadow: 0px 0px 4px rgb(0, 0, 0);
+    border: solid 1.7px var(--color-texto-dark-purple);
+    box-shadow: 1px 1px 8px rgba(87, 29, 103, 0.41);
+    background-image: url(../img/fondoNoche1.webp);
+}
+
+#menu-nav {
+    background-color: var(--color-texto-dark-purple);
+    box-shadow: 01px 0.6px 3px var(--color-secundario-lilac);
+}
+
+#menu-nav a {
+    color: var(--color-primario-cream);
+}
+
+#menu-nav a:hover {
+    background-color: var(--color-secundario-lilac);
+    box-shadow: 0px 0px 2px var(--color-texto-dark-purple);
+    color: var(--color-background-lavender-web);
+
+}
+
+.post i {
+    color: rgba(58, 24, 58, 0.755);
+}
+
+.button-mas {
+
+    background-color: var(--color-secundario-lilac);
+
+    color: var(--text-default);
+}
+
+.button-mas:hover {
+    background-color: var(--color-background-lavender-web);
+    color: var(--color-primario-cream);
+}
+
+#sidebar h4 .inicio {
+    color:var(--color-background-lavender-web);
+}
+
+#sidebar h4 .final {
+    color: var(--color-background-lavender-web);
+}
+
+#sidebar img {
+
+    box-shadow: 0px 0px 0px var(--color-secundario2-green-blue);
+
+
+}
+
+#login .boton {
+
+    background-color: var(--color-secundario-lilac);
+
+    color: var(--text-default);
+}
+
+#login .boton:hover {
+
+   
+    background-color: var(--color-secundario-lilac);
+
+
+}
+
+#login .inpt {
+   
+    border: 1.7px solid var(--color-secundario2-green-blue);
+    
+}
+
+#login .inpt:focus {
+    
+    border: 1.7px solid var(--color-texto-dark-purple);  
+}
+
+footer {
+    font-family: var(--text-default);
+    color: var(--color-primario-cream);
+    background: var(--color-texto-dark-purple);
+}
+.bx-wrapper{
+    border: 7px solid var(--color-secundario-lilac);
+    box-shadow: none;
+   
+}
+.bx-wrapper:hover{
+    border: 6px solid var(--color-background-lavender-web);
+}
