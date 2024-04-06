@@ -126,18 +126,29 @@ if(window.location.href.indexOf('Reloj') > -1){
 
 
 
+///VALIDACION DEL FORMULARIO
+if(window.location.href.indexOf('Contacto') > -1){
+  
+  $("form input[name='date']").datepicker({
+    dateFormat: 'dd-mm-yy'
+  });
+  
+  
+  $("#formularioDeContacto").submit(function(e){
+    e.preventDefault();
+    });
+    
+  
+ $.validate({
+  lang:'es'
+});
+
+
+};
 
 
 
 
 
-
-
-
-
-
-
-
-
-
+//final
 });
