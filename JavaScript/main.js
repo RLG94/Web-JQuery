@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 
     //SLIDER
-  if(window.location.href.indexOf('index') > -1 || window.location.href.indexOf('Index') > -1){ 
+  if(!(window.location.href.indexOf('Contacto') > -1 || window.location.href.indexOf('SobreMi') > -1 || window.location.href.indexOf('Reloj') > -1)){ 
   $('.bxslider').bxSlider({
    mode: 'fade',
    captions: true,
