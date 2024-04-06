@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 
     //SLIDER
-  if(window.location.href.indexOf('Index') > -1){ 
+  if(window.location.href.indexOf('index') > -1){ 
   $('.bxslider').bxSlider({
    mode: 'fade',
    captions: true,
