@@ -18,20 +18,12 @@
 
     <!-- Cargado de JQuery y sus componentes-->
     <script type="text/javascript" src="JQuery/jquery-3.7.1.min.js"></script>
-    <!-- Cargado de JQuery UI y sus componentes-->
-    <script type="text/javascript" src="JQuery/jquery-ui-1.13.2/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="JQuery/jquery-ui-1.13.2/jquery-ui.min.css">
-    <link rel="stylesheet" href="JQuery/jquery-ui-1.13.2/jquery-ui.structure.min.css">
-    <link rel="stylesheet" href="JQuery/jquery-ui-1.13.2/jquery-ui.theme.min.css">
-    
-    <!-- Ruta y Scripts del Slider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
     <!-- Plugin Moment CDN  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment-with-locales.min.js" integrity="sha512-4F1cxYdMiAW98oomSLaygEwmCnIP38pb4Kx70yQYqRwLVCs3DbRumfBq82T08g/4LJ/smbFGFpmeFlQgoDccgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/locale/es.min.js" integrity="sha512-BbwAo/p47HOeI2FUOjQVnNlgtcjpXFfSCXkojfJfUYXm7JA7nqHyVbCsU54KwkfV+YdHBiBhAENsE9717P9Wpg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+   
     <!-- Ruta de CSS principal -->
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
      <!-- Tema de colores del CSS -->
@@ -62,36 +54,27 @@
         <div class="ajuste"></div>
         <nav id="menu-nav">
             <ul>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="Index.html">Inicio</a></li>
                 <li><a href="SobreMi.html">Sobre mí</a></li>
-                <li><a href="Reloj.html">Reloj</a></li>
+                <li><a href="#">Reloj</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
      </header>
-    <!-- Slider -->
-    <div id="slider">
-        <div class="bxslider">
-            <div><img src="img/perfcta.webp" title=""/></div>
-            <div><img src="img/imagenBackground.webp" title="" /></div>
-            <div><img src="img/Fondo3.webp" title="" /></div>
-            <div><img src="img/fondo4.webp" title="" /></div>
-          </div>
 
-    </div>
     <!-- Contenido -->
     <section id="contenido">
-        <div id="posts">
-           <!-- Carga de articulos desde su JSON de JavaScript -->
-
-
-        </div>
+       <div id="box">
+      <!-- Carga de Reloj -->
+      <div id="reloj"></div>
+       </div> 
+      
        
        
        
         <aside id="sidebar">
           <div id="about">
-            <h4><span><i class="fa-solid fa-grip-lines inicio"></i><i class="fa-solid fa-grip-lines inicio"></i>Usuario <i class="fa-solid fa-grip-lines final"></i><i class="fa-solid fa-grip-lines final"></i></span></h4>
+            <h4><span><i class="fa-solid fa-grip-lines inicio"></i><i class="fa-solid fa-grip-lines inicio"></i>Usuario<i class="fa-solid fa-grip-lines final"></i><i class="fa-solid fa-grip-lines final"></i></span></h4>
             <img src="img/avatar.webp">
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..."</p>
           </div>

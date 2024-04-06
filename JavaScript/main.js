@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
+
     //SLIDER
+  if(window.location.href.indexOf('Index') > -1){ 
   $('.bxslider').bxSlider({
    mode: 'fade',
    captions: true,
@@ -9,7 +11,7 @@ $(document).ready(function(){
    pager:true,
    mode:'horizontal'
    });
-  
+    
     //POSTS
     let posts = [
         {title:"Prueba de titulo 1",
@@ -42,7 +44,7 @@ $(document).ready(function(){
     
     $("#posts").append(post)
 });
-
+  };
 
 
  ///CAMBIAR de TEMAS
@@ -76,34 +78,51 @@ $("#foter").click(function(){
 
 });
 
+
   ///Login falso
 
 $("#login form").submit(function(e){
     e.preventDefault();
-    
+  
 
    let form_name = $("#form_nombre").val();
    localStorage.setItem("NombreDeUsuario", form_name);
    
    if (form_name != null && form_name != "undefined"){
-    $("#about p").html("<hr><strong>Bienvenido, "+form_name+"</strong>");
+    let aboutParrafo = $("#about p");
+
+    aboutParrafo.html("<hr><strong>Bienvenido, "+form_name+"</strong>");
+    aboutParrafo.append(" <a href='#' id='logout'>Cerrar sesion<a/>");
     $("#login").hide();
-   }
-   
+    $("#logout").click(function(){
+        localStorage.clear();
+        location.reload();
+    })
+   };
 
 
 
-
-
-
-   
 });
 
 
 
-    
+    //CARGAR ACODEON EN PAGINA SOBREMI
  
+if(window.location.href.indexOf('SobreMi') > -1){ 
+  $("#acordeon").accordion();
 
+
+};
+
+   //CARGAR RELOJ EN PAGINA RELOJ
+
+if(window.location.href.indexOf('Reloj') > -1){
+  let reloj = moment().format('h:mm:ss');  
+  $("#reloj").html(reloj);
+    setInterval(function(){  
+       let reloj = moment().format('h:mm:ss');  
+       $("#reloj").html(reloj);},1000);
+};
 
 
 

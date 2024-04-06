@@ -396,3 +396,31 @@ footer a{
     height: 36px;
     cursor: pointer;
 }
+
+/* ACORDEON */
+
+#box{
+    width: 60%;
+    float: left;
+    margin-top: 30px;
+    margin-left: 3px;
+    
+    
+}
+
+
+/* RELOJ */
+#reloj{
+    font-size: 55px;
+    font-weight: bold;
+    width: 30%;
+    border: 5px dotted var(--color-texto-dark-purple);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+
+    
+
+}

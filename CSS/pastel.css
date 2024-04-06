@@ -110,3 +110,15 @@ footer {
 .bx-wrapper:hover{
     border: 6px solid var(--color-texto-dark-purple);
 }
+#acordeon h3{
+    border: 2px solid var(--color-secundario-lilac);
+    background: var(--color-background-lavender-web);
+    color: var(--color-texto-dark-purple);
+}
+#acordeon p{
+    background: rgba(195, 152, 183, 0.199);
+    color: var(--text-default);
+}
+#acordeon h3:focus{
+    text-shadow: 0px 0px 6px var(--color-primario-cream);
+}
