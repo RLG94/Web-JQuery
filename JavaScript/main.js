@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 
     //SLIDER
-  if(window.location.href.indexOf('index') > -1){ 
+  if(window.location.href.indexOf('index') > -1 || window.location.href.indexOf('Index') > -1){ 
   $('.bxslider').bxSlider({
    mode: 'fade',
    captions: true,
@@ -71,7 +71,7 @@ nocturno.click(function(){
     return false
   });
 
-$("#foter").click(function(){
+$("footer").click(function(){
     $("html,body").animate({
         scrollTop:0
     },700)
